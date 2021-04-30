@@ -11,6 +11,11 @@
 # production
 /build
 
+# JetBrains
+*.iml
+/.idea
+.idea
+
 # misc
 .DS_Store
 .env.local
