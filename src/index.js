@@ -2,11 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './app/layout/styles.css';
 import App from './app/layout/App.jsx';
-import reportWebVitals from './reportWebVitals';
 
 // TODO DJP StrictMode is new... will cause lots of warnings...
 
-const rootEl = document.getElementById('root');
+const rootEl = document.getElementById('app');
 
     /*
       Not a big deal, but this causes smoother instant re-render w/o flash.
@@ -32,7 +31,3 @@ ReactDOM.render(
 );
 */
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
