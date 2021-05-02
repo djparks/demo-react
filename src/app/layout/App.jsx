@@ -81,13 +81,25 @@ class App extends React.Component {
                                 <ErrorMessage name="confirmPassword" component="div" className="invalid-feedback" />
                             </div>
                         </div>
+
+                        <div className="form-row">
+                            <div className="form-group col">
+                                <label htmlFor="numb">Number Ex:</label>
+                                <Field name="numb" type="number"  />
+                            </div>
+                            <div className="form-group col">
+                                <label htmlFor="dater">Date Ex: </label>
+                                <Field name="dater" type="date"  />
+                            </div>
+                        </div>
+
                         <div className="form-group form-check">
                             <Field type="checkbox" name="acceptTerms" id="acceptTerms" className={'form-check-input ' + (errors.acceptTerms && touched.acceptTerms ? ' is-invalid' : '')} />
                             <label htmlFor="acceptTerms" className="form-check-label">Accept Terms & Conditions</label>
                             <ErrorMessage name="acceptTerms" component="div" className="invalid-feedback" />
                         </div>
                         <div className="form-group">
-                            <button type="submit" className="btn btn-primary mr-2">Register</button>
+                            <button type="submit" className="btn btn-primary mr-2">Submit</button>
                             <button type="reset" className="btn btn-secondary">Reset</button>
                         </div>
                     </Form>
